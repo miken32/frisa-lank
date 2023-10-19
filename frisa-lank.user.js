@@ -2,7 +2,7 @@
 // @name         Stack Overflow Frisa Lank Filter
 // @namespace    https://mike.eire.ca/
 // @description  It was just an April Fool's joke; now I can't browse SO any other way!
-// @version      0.1
+// @version      0.2
 // @match        https://stackoverflow.com/*
 // @match        https://cdn.sstatic.net/sites/stackoverflow/app_offline.htm
 // @icon         https://www.google.com/s2/favicons?domain=stackoverflow.com
