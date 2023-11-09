@@ -167,7 +167,7 @@ body.theme-custom.theme-frisa .nav-links .nav-links--link:hover {
 body.theme-custom.theme-frisa .nav-links .youarehere .nav-links--link .svg-icon {
   color: currentColor !important
 }
-body.theme-custom.theme-frisa .nav-links .fs-fine {
+body.theme-custom.theme-frisa .nav-links .fs-fine .fc-black-600 {
   color: #ffffff !important;
   text-shadow: 1px 1px 1px var(--theme-dark-purplish);
   font-weight: bold
