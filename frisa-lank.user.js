@@ -2,7 +2,7 @@
 // @name         Stack Overflow Frisa Lank Filter
 // @namespace    https://mike.eire.ca/
 // @description  It was just an April Fool's joke; now I can't browse SO any other way!
-// @version      0.2
+// @version      0.2.1
 // @match        https://stackoverflow.com/*
 // @match        https://cdn.sstatic.net/sites/stackoverflow/app_offline.htm
 // @icon         https://www.google.com/s2/favicons?domain=stackoverflow.com
@@ -125,7 +125,7 @@ body.theme-custom.theme-frisa.floating-content #content {
 }
 
 body.theme-custom.theme-frisa .s-topbar {
-  padding-top: 4px
+  padding-top: 4px;
 }
 body.theme-custom.theme-frisa .s-topbar::before {
   content: "";
@@ -134,94 +134,98 @@ body.theme-custom.theme-frisa .s-topbar::before {
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, #f5e256 0%, #dc803e 33%, #d44073 66%, #454690 100%)
+  background: linear-gradient(90deg, #f5e256 0%, #dc803e 33%, #d44073 66%, #454690 100%);
 }
 body.theme-custom.theme-frisa .s-topbar .s-topbar--logo:hover .-img._glyph {
-  filter: invert(.5) brightness(2)
+  filter: invert(.5) brightness(2);
 }
 body.theme-custom.theme-frisa #content {
   margin: 24px auto;
-  border-radius: 16px
+  border-radius: 16px;
 }
 body.theme-custom.theme-frisa .nav-links .fc-black-400 {
-  color: #fff !important
+  color: #fff !important;
 }
 body.theme-custom.theme-frisa .nav-links .nav-links--link,body.theme-custom.theme-frisa .nav-links .nav-links--link:visited {
   border-radius: 20px;
   margin: 8px 0;
   color: #ffffff;
-  background: rgba(212,64,115,0.4)
+  background: rgba(212,64,115,0.4);
 }
 body.theme-custom.theme-frisa .nav-links .youarehere .nav-links--link {
   background: #fff;
   color: var(--theme-secondary-color);
-  border-right: none
+  border-right: none;
 }
 body.theme-custom.theme-frisa .nav-links .nav-links--link.-link__with-icon .svg-icon,body.theme-custom.theme-frisa .nav-links .nav-links--link:hover .svg-icon {
-  color: #fff !important
+  color: #fff !important;
 }
+.nav-links .nav-links--link.-link__with-icon:hover .svg-icon, .nav-links .nav-links--link.-link__with-icon:focus .svg-icon, .nav-links .nav-links--link.-link__with-icon:active .svg-icon {
+  background: transparent;
+}
+
 body.theme-custom.theme-frisa .nav-links .nav-links--link:hover {
   color: #fff;
-  background: var(--theme-secondary-color)
+  background: var(--theme-secondary-color);
 }
 body.theme-custom.theme-frisa .nav-links .youarehere .nav-links--link .svg-icon {
-  color: currentColor !important
+  color: currentColor !important;
 }
 body.theme-custom.theme-frisa .nav-links .fs-fine .fc-black-600 {
   color: #ffffff !important;
   text-shadow: 1px 1px 1px var(--theme-dark-purplish);
-  font-weight: bold
+  font-weight: bold;
 }
 body.theme-custom.theme-frisa .s-btn__filled:hover,body.theme-custom.theme-frisa .s-btn__filled:focus,body.theme-custom.theme-frisa .s-btn__filled:active {
-  border-color: #439AD5
+  border-color: #439AD5;
 }
 body.theme-custom.theme-frisa .s-btn {
-  border-radius: 20px
+  border-radius: 20px;
 }
 body.theme-custom.theme-frisa .s-input,body.theme-custom.theme-frisa .s-textarea {
-  border-radius: 8px
+  border-radius: 8px;
 }
 body.theme-custom.theme-frisa .owner {
-  border-radius: 8px
+  border-radius: 8px;
 }
 body.theme-custom.theme-frisa .gravatar-wrapper-24 {
-  border-radius: 12px
+  border-radius: 12px;
 }
 body.theme-custom.theme-frisa .post-tag,body.theme-custom.theme-frisa .s-tag {
-  border-radius: 6px
+  border-radius: 6px;
 }
 body.theme-custom.theme-frisa .s-sidebarwidget {
   border-radius: 12px;
   box-shadow: none;
-  overflow: hidden
+  overflow: hidden;
 }
 body.theme-custom.theme-frisa .s-sidebarwidget--header:first-child {
-  border-top: none
+  border-top: none;
 }
 body.theme-custom.theme-frisa .s-post-summary {
-  padding: 24px 16px
+  padding: 24px 16px;
 }
 body.theme-custom.theme-frisa .s-post-summary--content .s-post-summary--content-title,body.theme-custom.theme-frisa .s-post-summary--content .s-post-summary--content-title .s-link {
-  font-weight: bold
+  font-weight: bold;
 }
 body.theme-custom.theme-frisa .s-post-summary--stats {
-  margin-right: 12px
+  margin-right: 12px;
 }
 body.theme-custom.theme-frisa .s-post-summary--stats .s-post-summary--stats-item.has-answers {
   color: var(--theme-wintergreen);
   border-color: var(--theme-wintergreen);
   border-radius: 6px;
-  padding: 4px 8px
+  padding: 4px 8px;
 }
 body.theme-custom.theme-frisa .s-post-summary--stats .s-post-summary--stats-item.has-answers.has-accepted-answer {
   background-color: var(--theme-wintergreen);
-  color: #ffffff
+  color: #ffffff;
 }
 body.theme-custom.theme-frisa .js-freemium-cta>div:last-child {
-  background-color: var(--white)
+  background-color: var(--white);
 }
 body.theme-custom.theme-frisa .af-bar__big {
-  background: var(--theme-footer-background-color) !important
+  background: var(--theme-footer-background-color) !important;
 }
 body.theme-custom.theme-frisa > div.wrapper > div.msg {
   /* unscheduled maintenance notice */
