@@ -192,6 +192,7 @@ body.theme-custom.theme-frisa .gravatar-wrapper-24 {
   border-radius: 12px;
 }
 body.theme-custom.theme-frisa .post-tag,body.theme-custom.theme-frisa .s-tag {
+  font-weight: normal;
   border-radius: 6px;
 }
 body.theme-custom.theme-frisa .s-sidebarwidget {
