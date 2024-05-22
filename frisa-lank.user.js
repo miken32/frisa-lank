@@ -2,7 +2,7 @@
 // @name         Stack Overflow Frisa Lank Filter
 // @namespace    https://mike.eire.ca/
 // @description  It was just an April Fool's joke; now I can't browse SO any other way!
-// @version      0.2.1
+// @version      0.2.2
 // @match        https://stackoverflow.com/*
 // @match        https://cdn.sstatic.net/sites/stackoverflow/app_offline.htm
 // @icon         https://www.google.com/s2/favicons?domain=stackoverflow.com
@@ -175,6 +175,9 @@ body.theme-custom.theme-frisa .nav-links .fs-fine .fc-black-600 {
   color: #ffffff !important;
   text-shadow: 1px 1px 1px var(--theme-dark-purplish);
   font-weight: bold;
+}
+body.theme-custom.theme-frisa header .s-navigation {
+  display: none;
 }
 body.theme-custom.theme-frisa .s-btn__filled:hover,body.theme-custom.theme-frisa .s-btn__filled:focus,body.theme-custom.theme-frisa .s-btn__filled:active {
   border-color: #439AD5;
