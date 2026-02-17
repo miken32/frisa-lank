@@ -2,7 +2,7 @@
 // @name         Stack Overflow Frisa Lank Filter
 // @namespace    https://mike.eire.ca/
 // @description  It was just an April Fool's joke; now I can't browse SO any other way!
-// @version      0.2.2
+// @version      0.2.5
 // @match        https://stackoverflow.com/*
 // @match        https://cdn.sstatic.net/sites/stackoverflow/app_offline.htm
 // @icon         https://www.google.com/s2/favicons?domain=stackoverflow.com
@@ -240,13 +240,34 @@ body.theme-custom.theme-frisa > div.wrapper > div.msg {
 .s-btn__unset:focus, .s-btn__link:focus, .s-btn__unset:focus-visible, .s-btn__link:focus-visible {
   outline-style: none;
 }
-#left-sidebar {
-    margin-right: 0.75em;
-    margin-left: -0.75em;
+body.theme-custom.theme-frisa header .topbar-dialog.leftnav-dialog {
+  margin-top: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: var(--theme-dark-purplish);
+  border: none;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+body.theme-custom.theme-frisa header .topbar-dialog.leftnav-dialog .left-sidebar {
+  margin-right: 0.5rem;
+  .s-link__grayscale, .fc-medium {
+    color: white !important;
+  }
 }
 html {
     height: 100%;
 }
+a[href='https://stackoverflow.com/ai-assist'] {
+  /* ick */
+  display: none !important;
+}
+.s-tag.post-tag.bg-white {
+  /* open-ended question type */
+  background-color: var(--theme-secondary-color) !important;
+  border-color: var(--theme-secondary-color) !important;
+}
+
 `);
     let style = document.createElement("style");
     style.appendChild(css);
@@ -272,5 +293,15 @@ html {
     if (table) {
         table.style.tableLayout = "fixed";
         table.classList.add("w100");
+    }
+
+    // re-scroll to a specific answer after CSS changes push things around
+    let name = window.location.hash.replace(/#/, "");
+    if (name && document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", function() {
+            // document.querySelector(`[name='${name}']`)?.scrollTo();
+        });
+    } else if (name) {
+        // document.querySelector(`[name='${name}']`)?.scrollTo();
     }
 })();
