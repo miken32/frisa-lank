@@ -264,7 +264,7 @@ body.theme-custom.theme-frisa {
         }
     }
 
-    .s-tag.post-tag.bg-white {
+    .s-tag.post-tag.s-tag__obc {
         /* open-ended question type */
         background-color: var(--theme-secondary-color) !important;
         border-color: var(--theme-secondary-color) !important;
